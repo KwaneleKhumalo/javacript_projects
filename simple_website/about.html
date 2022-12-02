@@ -9,13 +9,26 @@
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0/css/materialize.min.css">
     <link rel="stylesheet" href="./styles/style.css">
     <link rel="stylesheet" href="./styles/about.css">
+    <!-- scripts -->
+    <script defer src="https://cdn.jsdelivr.net/npm/typed.js@2.0.12"></script>
     <script defer src="https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0/js/materialize.min.js"></script>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.6.1/jquery.min.js"></script>
-    <script defer src="./scripts/main.js"></script>
     <script defer src="./scripts/nav.js"></script>
-    <title>Landing-Page</title>
+    <script defer src="./scripts/about.js"></script>
+    <title>About | No cutting Corners</title>
 </head>
 <body>
+    <div class="side-nav z-depth-5">
+        <a href="#">
+            <i class="fa-brands fa-square-behance"></i>
+        </a>
+        <a href="#">
+            <i class="fa-brands fa-github"></i>
+        </a>
+        <a href="#">
+            <i class="fa-brands fa-facebook"></i>
+        </a>
+    </div>
     <header>
         <div class="navbar">
            <div class="nav-items">
@@ -26,7 +39,7 @@
             </div>
             <div class="mid-nav-items">
                 <a href="index.html">HOME</a>
-                <a href="about">ABOUT</a>
+                <a href="about.html">ABOUT</a>
                 <a href="#">PORTFOLIO</a>
             </div>
 
@@ -46,84 +59,41 @@
             </div>
         </div>
         <div class="header-content">
-            <h1>Hello World!</h1>
-            <p>Every Design has a story!</p>
+            <h1>DIGITAL SOLUTIONS</h1>
+            <strong><span class="auto-type"></span></strong>
+            
         </div>
     </header>
-    <div class="side-nav z-depth-5">
-        <a href="#">
-            <i class="fa-brands fa-square-behance"></i>
-        </a>
-        <a href="#">
-            <i class="fa-brands fa-github"></i>
-        </a>
-        <a href="#">
-            <i class="fa-brands fa-facebook"></i>
-        </a>
-    </div>
+    
+    <section class="about-container">
+        <div class="about-me-header">
+            <h4>Services</h4>
+            <ul class="services">
+                <li><a href="#">Brand Identity & Management</a></li>
+                <li><a href="#">UI/UX Design</a></li>
+                <li><a href="#">Web Development</a></li>
+                <li><a href="#">Graphic & Product Design</a></li>
+                <li><a href="#">SEO & Digital Marketing</a></li>
+            </ul>
 
-    <section class="intro">
-        <h4 class="cutting-corners"> Tired of cutting corners?</h4>
-        <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Nostrum dolore sint numquam, eveniet sapiente ad debitis possimus facere hic sequi?</p>
-        <button class="btn waves-effect wave-light">Book a Solution</button>
+            <p class="description">Lorem ipsum dolor sit amet consectetur adipisicing elit. Dignissimos consequatur numquam in tempora reprehenderit nostrum eaque et consequuntur quibusdam tempore animi, molestias, quos error illum quasi enim vel qui? Nostrum temporibus repellat sapiente! Minus dolorem saepe reprehenderit, voluptatem, itaque ut, quos ab doloremque quod cum laboriosam dicta eaque nostrum mollitia.</p>
+
+            <button class="btn waves-effect waves-lighten">book a solution</button>
+        </div>
+        <div class="about-me-content">
+            
+        </div>
     </section>
 
-    <section class="grid">
-        <div class="grid-box barrel-b z-depth-4">
-            <div class="box">
-                <h4><a href="">Barrel Brewery</a></h4>
-                <p>Lorem ipsum dolor sit amet.</p>
-            </div>
-        </div>
-        <div class="grid-box cavalry z-depth-4">
-            <div class="box">
-                <h4><a href=""> Cavalry Construction</a></h4>
-                <p>Lorem ipsum dolor sit amet.</p>
-
-            </div>
-        </div>
-        <div class="grid-box melissa z-depth-4">
-            <div class="box">
-                <h4><a href="">Melissa Shields</a></h4>
-                <p>Lorem ipsum dolor sit amet.</p>
-            </div>
-        </div>
-        <div class="grid-box coffee-cup z-depth-4">
-            <div class="box">
-                <h4><a href="">The Coffee Cup</a></h4>
-                <p>Lorem ipsum dolor sit amet.</p>
-            </div>
+    <section class="reviews-container">
+        <div class="reviews">
+            <h4>Who I've Worked With</h4>
+            <p class="description">Lorem ipsum dolor sit amet consectetur adipisicing elit. Dignissimos consequatur numquam in tempora reprehenderit nostrum eaque et consequuntur quibusdam tempore animi, molestias, quos error illum quasi enim vel qui? Nostrum temporibus repellat sapiente! Minus dolorem saepe reprehenderit, voluptatem, itaque ut, quos ab doloremque quod cum laboriosam dicta eaque nostrum mollitia.</p>
         </div>
 
-
-        <div class="grid-box barrel-b z-depth-4">
-            <div class="box">
-                <h4><a href="">Barrel Brewery</a></h4>
-                <p>Lorem ipsum dolor sit amet.</p>
-            </div>
-        </div>
-        <div class="grid-box cavalry z-depth-4">
-            <div class="box">
-                <h4><a href=""> Cavalry Construction</a></h4>
-                <p>Lorem ipsum dolor sit amet.</p>
-
-            </div>
-        </div>
-        <div class="grid-box melissa z-depth-4">
-            <div class="box">
-                <h4><a href="">Melissa Shields</a></h4>
-                <p>Lorem ipsum dolor sit amet.</p>
-            </div>
-        </div>
-        <div class="grid-box coffee-cup z-depth-4">
-            <div class="box">
-                <h4><a href="">The Coffee Cup</a></h4>
-                <p>Lorem ipsum dolor sit amet.</p>
-            </div>
-        </div>
-
-        
     </section>
+
+
 
     <section class="contact-form-container z-depth-5">
         <div class="contact-form-header">
@@ -150,5 +120,6 @@
             <p>Website Designed by Kwanele Khumalo</p>
         </div>
     </section>
+
 </body>
 </html>

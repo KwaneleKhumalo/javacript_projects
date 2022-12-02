@@ -1,0 +1,129 @@
+strong .auto-type
+{
+    font-size: 2.5rem !important;
+}
+
+.about-container
+{
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+    background: linear-gradient(to right,#080899d8 45%, #8e46f3);
+    margin: 0rem 2rem 5rem 0;
+}
+
+.about-me-header
+{
+    display: flex;
+    flex-direction: column;
+    gap: 3rem;
+    align-items: center;
+    padding: 20px;
+    color: white;
+}
+
+.services {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 5rem;
+}
+
+li a{
+    color: white;
+    list-style: square;
+    font-size: 20px;
+    transition: .5s ease-in-out;
+}
+
+li a:hover
+{
+    text-decoration: underline;
+    text-decoration-color: #8e46f3;
+    text-decoration-thickness: 5px;
+}
+
+.description {
+    width: 50%;
+    display: flex;
+    align-items: center;
+    text-align: center;
+    font-size: 25px;
+}
+
+.reviews-container
+{
+    margin-bottom: 5rem;
+}
+
+.about-me-header, .reviews
+{
+    display: flex;
+    flex-direction: column;
+    gap: 3rem;
+    align-items: center;
+    padding: 20px;
+}
+
+
+@media screen and (max-width: 600px) 
+{
+    header {
+        height: 60vh;
+    }
+
+    .header-content {
+        width: 100%;
+        margin-left: 2rem !important;
+    }
+
+    .header-content h1 {
+        width: 100%;
+        font-size: 20px;
+    }
+    /* --------- */
+
+    .services {
+        flex-direction: column;
+        text-align: center;
+        margin-left: 2.8rem;
+    }
+
+    .description {
+        width: 100%;
+        text-align: center;
+        margin-left: 2.8rem;
+        text-align: center;
+        font-size: 16px;
+    }
+
+    .about-me-header > button
+    {
+        margin-left: 2.8rem;
+    }
+
+    .reviews-container {
+        padding-left: 2rem;
+        text-align: center;
+    }
+
+    .reviews > .description {
+        margin-left: .8rem;
+    }
+
+    
+}
+
+@media screen and (min-width: 1024px) and (max-width: 1280px)
+    {
+        .services, .about-me-header > .description, .about-me-header > button, .reviews, .contact-form-header, .contact-form, .copyright {
+            margin-left: 5rem !important;
+        }
+    }
+
+@media screen and (min-width: 768px) and (max-width: 912px)
+    {
+        .services {
+            flex-direction: column;
+        }
+    }
