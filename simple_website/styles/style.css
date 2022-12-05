@@ -202,6 +202,7 @@ h4 > a {
     background-position: top;
     background-size: cover;
     background-repeat: no-repeat;
+    cursor: pointer;
 }
 
 .cavalry {
@@ -209,6 +210,8 @@ h4 > a {
     background-position: center;
     background-size: cover;
     background-repeat: no-repeat;
+    cursor: pointer;
+
 }
 
 .melissa {
@@ -216,6 +219,8 @@ h4 > a {
     background-size: cover;
     background-position: bottom;
     background-repeat: no-repeat;
+    cursor: pointer;
+
 }
 
 .coffee-cup {
@@ -223,6 +228,39 @@ h4 > a {
     background-size: cover;
     background-position: top;
     background-repeat: no-repeat;
+    cursor: pointer;
+}
+
+.dizzy-sports {
+    background-image: url(../img/Dizzy_Sports.png);
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    cursor: pointer;
+}
+
+.hiding-place {
+    background-image: url(../img/hiding_place.png);
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    cursor: pointer;
+}
+
+.apple-orchards {
+    background-image: url(../img/apple-orchards.png);
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    cursor: pointer;
+}
+
+.paw-rescue {
+    background-image: url(../img/paw-rescue.png);
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    cursor: pointer;
 }
 
 /* Contact Form */
