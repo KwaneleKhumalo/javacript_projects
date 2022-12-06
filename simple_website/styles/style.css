@@ -634,7 +634,7 @@ textarea, input {
     {
         opacity: 0;
         background-color: #080899d8;
-        margin-left: 2.7rem;
+        margin-left: 2.2rem;
         height: 100vh;
         left: 5.8%;
         width: 100%;
@@ -676,7 +676,7 @@ textarea, input {
     {
         grid-template-columns: auto;
         grid-gap: 20px;
-        padding-left: 1.5rem;
+        padding-left: 2.9rem;
     }
 
     .grid-box
@@ -708,7 +708,7 @@ textarea, input {
 
 /* Mid Size Screens */
 
-@media screen and (min-width: 769px) and (max-width: 1700px) 
+@media screen and (min-width: 821px) and (max-width: 1700px) 
 {
     .grid
     {
