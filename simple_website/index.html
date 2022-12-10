@@ -21,12 +21,13 @@
            <div class="nav-items">
             <div class="logo">
                 <a class="logo-img" href="#">
-                    <i class="material-icons">spa</i>
+                    <img id="logo-img" src="./img/Artboard 2.png" alt="" style="width: 110px;">
                 </a>
             </div>
             <div class="mid-nav-items">
                 <a href="index.html">HOME</a>
-                <a href="about">ABOUT</a>
+                <a href="about.html">ABOUT</a>
+                <a href="pricing.html">PRICING</a>
                 <a href="#">PORTFOLIO</a>
             </div>
 
@@ -141,6 +142,15 @@
             <div class="input-field">
                 <label for="name">Your Message</label>
                 <textarea id="textarea2" class="materialize-textarea" data-length="100"></textarea>
+            </div>
+
+            <div class="input-field">
+                <select required>
+                    <option value="" disabled selected>Choose a Service</option>
+                    <option value="web">Web Development</option>
+                    <option value="marketing">Digital Marketing</option>
+                    <option value="brand">Brand Management</option>
+                </select>
             </div>
             <button class="waves-effect btn">SUBMIT</button>
         </form>

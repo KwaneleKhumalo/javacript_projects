@@ -1,0 +1,156 @@
+/* #080899d8 45%, #8e46f3 */
+body
+{
+    display: flex;
+    flex-direction: column;
+    gap: 8rem;
+}
+
+.price-container
+{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 2rem;
+    width: 80%;
+    margin: auto;
+    padding-left: 4.5rem;
+}
+
+.price-model
+{
+    width: 35%;
+    height: 40rem;
+    text-align: center;
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+    padding-bottom: 20px;
+}
+
+.price-model-img
+{
+    height: 50%;
+}
+
+.web > .price-model-img
+{
+    background:linear-gradient( rgba(0, 0, 0, 0.485) 100%, rgba(0, 0, 0, 0.344)100%),url("../img/web_design.jpg");
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+
+.logo > .price-model-img
+{
+    background:linear-gradient( rgba(0, 0, 0, 0.485) 100%, rgba(0, 0, 0, 0.344)100%),url("../img/logo_design.jpg");
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+
+.marketing > .price-model-img
+{
+    background:linear-gradient( rgba(0, 0, 0, 0.245) 100%, rgba(0, 0, 0, 0.344)100%),url("../img/marketing.jpg");
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+
+
+.brand > .price-model-img
+{
+    background:linear-gradient( rgba(0, 0, 0, 0.245) 100%, rgba(0, 0, 0, 0.344)100%),url("../img/brand.jpg");
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+
+
+.price-model-title > strong
+{
+    font-size: 25px;
+    border-bottom: 2px solid #17D6FF;
+}
+
+
+ul
+{
+    text-align: start;
+    display: flex;
+    flex-direction: column;
+    gap: 5px;
+}
+
+li
+{
+    display: flex;
+    justify-content: space-between;
+    padding: 0 20px ;
+}
+
+li > .material-icons
+{
+    color: #17D6FF !important;
+}
+
+.price-model-button > button
+{
+    background-color: #17D6FF !important;
+}
+
+
+/* Media Queries */
+@media screen and (max-width: 767px) 
+{
+    .price-container
+    {
+        flex-direction: column;
+        width: 100%;
+        padding-left: 2.5rem;
+    }
+
+    .price-model
+    {
+        width: 80%;
+    }
+}
+
+@media screen and (min-width: 768px) and (max-width:911px)
+{
+    .price-container
+    {
+        flex-direction: column;
+        width: 100%;
+        padding-left: 10%;
+    }
+
+    .price-model
+    {
+        width: 80%;
+    }
+}
+
+@media screen and (min-width:912px) and (max-width:920px)
+{
+    .price-container
+    {
+        flex-direction: column;
+        width: 100%;
+        padding-left: 5%;
+    }
+
+    .price-model
+    {
+        width: 80%;
+    }
+}
+
+@media screen and (min-width: 921px) and (max-width:1280px)
+{
+    .price-container
+    {
+        width: 95%;
+        padding-left: 2.5rem;
+    }
+}

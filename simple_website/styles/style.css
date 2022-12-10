@@ -71,7 +71,7 @@ header
 .responsive-nav-icons
 {
     position: absolute;
-    display: flex;
+    display: none;
     right: 4%;
     top: 4%;
     align-items: center;
@@ -85,7 +85,6 @@ header
     z-index: 10;
     font-size: 50px;
     cursor: pointer;
-    display: none;
 }
 
 .close-nav
@@ -297,6 +296,13 @@ label {
 textarea, input {
     color: white;
 }
+
+select {
+    display: block;
+}
+
+
+
 .copyright
 {
     display: flex;
@@ -307,39 +313,43 @@ textarea, input {
 /* Tablets */
 @media screen and (max-width: 767px)
 {
+
+    .header-content
+    {
+        position: absolute;
+        right: 0%;
+        top: 16%;
+        padding-left: 20px;
+    }
+
     .nav-active
     {
         display: none;
     }
-    header
-    {
-        height: 50vh;
-        background-position: left;
-    }
 
-    .navbar {
-        padding: 0;
-    }
-
-    .nav-items, .mid-nav-items, .right-nav-items {
+    .mid-nav-items, .right-nav-items {
         flex-direction: column;
-        justify-content: center;
-        gap: 5rem;
+        gap: 2rem;
         align-items: center;
-        font-size: 30px;
+        font-size: 16px;
     }
 
     .nav-items
     {
+        flex-direction: column;
         opacity: 0;
         background-color: #080899d8;
-        width: 100%;
-        height: 100vh;
+        width: 91.5%;
+        margin-left: 1.3rem;
+        height: auto;
+        gap: 20px;
         left: 5%;
         z-index: 2;
         top: 0;
         transition: 0.3s ease-in-out;
     }
+
+
 
     .header-content
     {
@@ -348,18 +358,24 @@ textarea, input {
         text-align: center;
     }
 
-    .open-nav {
-        display: inline-block;
-        top: 10%;
+    .open-nav, .close-nav {
+        top: 0;
+        font-size: 30px;
+        transition: 0.3s ease-in-out;
+    }
+
+    .responsive-nav-icons {
+        display: flex;
     }
     .intro
     {
         padding-left: 40px;
         text-align: center;
+        margin-top: 1.4rem;
     }
 
     .intro p {
-        width: 80%;
+        width: 95%;
     }
 
     .side-nav
@@ -374,7 +390,7 @@ textarea, input {
         grid-template-columns: auto;
         grid-gap: 20px;
         padding-left: 0rem;
-        margin-left: 2.8rem;
+        margin-left: 14%;
     }
 
     .grid-box
@@ -405,30 +421,12 @@ textarea, input {
     
 }
 
-
-/* midsize*/
-@media screen and (max-width: 415px)
+/* Ipads and Tablets*/
+@media screen and (min-width: 768px) and (max-width: 820px) 
 {
     .nav-active
     {
         display: none;
-    }
-    header
-    {
-        height: 50vh;
-        background-position: left;
-    }
-
-
-    .header-content {
-        width: 100%;
-        margin: 0rem 1rem !important; 
-        text-align: center;
-    }
-
-    .header-content > h1
-    {
-        font-size: 40px;
     }
 
     .navbar {
@@ -447,19 +445,25 @@ textarea, input {
     {
         opacity: 0;
         background-color: #080899d8;
-        margin-left: 1.2rem;
-        height: 100%;
+        margin-left: 2.2rem;
+        height: 100vh;
+        left: 5.8%;
         width: 100%;
-        padding-right: 5rem;
+        padding-right: 8rem;
         z-index: 2;
         top: 0;
         transition: 0.5s ease-in-out;
     }
 
+    .responsive-nav-icons {
+        display: flex;
+    }
+
     .header-content
     {
-        width: 100%;
-        margin: 30rem 1.5rem; 
+        position: absolute;
+        left: 26%;
+        top: 40%; 
         text-align: center;
     }
 
@@ -488,14 +492,14 @@ textarea, input {
     {
         grid-template-columns: auto;
         grid-gap: 20px;
-        padding-left: 0rem;
+        padding-left: 5%;
     }
 
     .grid-box
     {
         height: auto;
         width: 100%;
-        padding: 15rem 0;
+        padding: 22rem 0;
     }
 
     /* form */
@@ -503,41 +507,58 @@ textarea, input {
     .contact-form-container
     {
         padding: 0 0 40px 3rem;
+        /* margin: 5rem 0; */
         height: auto;
     }
 
     .contact-form
     {
         width: 80%;
-    }  
+    }
+
+    
 }
 
 
-@media screen and (max-width: 540px)  
+
+
+/* Mid Size Screens */
+
+@media screen and (min-width: 821px) and (max-width: 1700px) 
 {
     .grid
     {
-        grid-template-columns: auto;
-        grid-gap: 20px;
-        padding-left: 1rem;
+        margin-left: 2.8rem;
+        grid-template-columns: auto auto;
     }
+   .grid-box{
+     padding: 25rem 5rem 8rem 0;
+   }
 
-    .grid-box
-    {
-        height: auto;
-        width: 100%;
-        padding: 15rem 0;
-    }
-
+   .contact-form-container {
+    margin-left: 0rem;
+   }
+    
 }
+
+
+
+
+
+
+
+
+
+
+
+
 
 /* Small Mobile and Fold */
 
-@media screen and (max-width: 280px)
+/* @media screen and (max-width: 280px)
 {
     body
     {
-        border: 2px solid red;
         width: 100vw;
     }
 
@@ -603,124 +624,25 @@ textarea, input {
     padding-left: 1rem;
    }
     
-}
+} */
 
-/* Ipads and Tablets*/
-@media screen and (min-width: 768px) and (max-width: 820px) 
+
+
+/* 
+@media screen and (max-width: 540px)  
 {
-    .nav-active
-    {
-        display: none;
-    }
-    header
-    {
-        height: 100vh;
-        background-position: left;
-    }
-
-    .navbar {
-        padding: 0;
-    }
-
-    .nav-items, .mid-nav-items, .right-nav-items {
-        flex-direction: column;
-        justify-content: center;
-        gap: 5rem;
-        align-items: center;
-        font-size: 30px;
-    }
-
-    .nav-items
-    {
-        opacity: 0;
-        background-color: #080899d8;
-        margin-left: 2.2rem;
-        height: 100vh;
-        left: 5.8%;
-        width: 100%;
-        padding-right: 10rem;
-        z-index: 2;
-        top: 0;
-        transition: 0.5s ease-in-out;
-    }
-
-    .header-content
-    {
-        width: 100%;
-        margin: 30rem 1.5rem; 
-        text-align: center;
-    }
-
-    .open-nav {
-        display: inline-block;
-    }
-
-    .intro
-    {
-        padding-left: 40px;
-        text-align: center;
-    }
-
-    .intro p {
-        width: 60%;
-    }
-
-    .side-nav
-    {
-        width: 10%;
-        align-items: center;
-        padding: 0;
-    }
-
     .grid
     {
         grid-template-columns: auto;
         grid-gap: 20px;
-        padding-left: 2.9rem;
+        padding-left: 1rem;
     }
 
     .grid-box
     {
         height: auto;
         width: 100%;
-        padding: 22rem 0;
+        padding: 15rem 0;
     }
 
-    /* form */
-
-    .contact-form-container
-    {
-        padding: 0 0 40px 3rem;
-        /* margin: 5rem 0; */
-        height: auto;
-    }
-
-    .contact-form
-    {
-        width: 80%;
-    }
-
-    
-}
-
-
-
-
-/* Mid Size Screens */
-
-@media screen and (min-width: 821px) and (max-width: 1700px) 
-{
-    .grid
-    {
-        margin-left: 2.8rem;
-        grid-template-columns: auto auto;
-    }
-   .grid-box{
-     padding: 25rem 5rem 8rem 0;
-   }
-
-   .contact-form-container {
-    margin-left: 0rem;
-   }
-    
-}
+} */

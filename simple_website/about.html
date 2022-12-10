@@ -34,12 +34,13 @@
            <div class="nav-items">
             <div class="logo">
                 <a class="logo-img" href="#">
-                    <i class="material-icons">spa</i>
+                    <img id="logo-img" src="./img/Artboard 2.png" alt="" style="width: 110px;">
                 </a>
             </div>
             <div class="mid-nav-items">
                 <a href="index.html">HOME</a>
                 <a href="about.html">ABOUT</a>
+                <a href="pricing.html">PRICING</a>
                 <a href="#">PORTFOLIO</a>
             </div>
 
@@ -59,8 +60,7 @@
             </div>
         </div>
         <div class="header-content">
-            <h1>DIGITAL SOLUTIONS</h1>
-            <strong><span class="auto-type"></span></strong>
+            <h2><span class="auto-type"></span></h2>
             
         </div>
     </header>
@@ -80,9 +80,6 @@
 
             <button class="btn waves-effect waves-lighten">book a solution</button>
         </div>
-        <div class="about-me-content">
-            
-        </div>
     </section>
 
     <section class="reviews-container">
@@ -91,9 +88,11 @@
             <p class="description">Lorem ipsum dolor sit amet consectetur adipisicing elit. Dignissimos consequatur numquam in tempora reprehenderit nostrum eaque et consequuntur quibusdam tempore animi, molestias, quos error illum quasi enim vel qui? Nostrum temporibus repellat sapiente! Minus dolorem saepe reprehenderit, voluptatem, itaque ut, quos ab doloremque quod cum laboriosam dicta eaque nostrum mollitia.</p>
         </div>
 
+        <div class="about-me-img">
+            <img src="./img/kwanele-01.png"alt="" width="20%">
+        </div>
+
     </section>
-
-
 
     <section class="contact-form-container z-depth-5">
         <div class="contact-form-header">
@@ -102,15 +101,24 @@
         <form class="contact-form">
             <div class="input-field">
                 <label for="name">Name</label>
-                <input type="text" id="input_text" data-length="50">
+                <input type="text" id="input_text" required data-length="50">
             </div>
             <div class="input-field">
                 <label for="name">Email</label>
-                <input type="email" id="input_text" data-length="50">
+                <input type="email" id="input_text" required data-length="50">
             </div>
             <div class="input-field">
                 <label for="name">Your Message</label>
-                <textarea id="textarea2" class="materialize-textarea" data-length="100"></textarea>
+                <textarea id="textarea2" class="materialize-textarea" data-length="100" ></textarea>
+            </div>
+
+            <div class="input-field">
+                <select required>
+                    <option value="" disabled selected>Choose a Service</option>
+                    <option value="web">Web Development</option>
+                    <option value="marketing">Digital Marketing</option>
+                    <option value="brand">Brand Management</option>
+                </select>
             </div>
             <button class="waves-effect btn">SUBMIT</button>
         </form>

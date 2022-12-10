@@ -114,16 +114,45 @@ li a:hover
     
 }
 
-@media screen and (min-width: 1024px) and (max-width: 1280px)
-    {
-        .services, .about-me-header > .description, .about-me-header > button, .reviews, .contact-form-header, .contact-form, .copyright {
-            margin-left: 5rem !important;
-        }
-    }
 
 @media screen and (min-width: 601px) and (max-width: 912px)
     {
         .services {
             flex-direction: column;
+            margin-left: 5%;
+            width: 100%;
+        }
+
+        .description
+        {
+            width: 90%;
+            margin-left: 5%;
+        }
+
+        .about-me-header > button, .about-me-header > h4
+        {
+            margin-left: 5%;
         }
     }
+
+
+
+@media screen and (min-width: 1024px) and (max-width: 1280px)
+    {
+        .services, .about-me-header > .about-me-header > button, .reviews, .contact-form-header .copyright {
+            margin-left: 5% !important;
+            text-align: center;
+        }
+
+        .description
+        {
+            width: 90%;
+            margin-left: 5% !important;
+        }
+
+        .contact-form
+        {
+            margin-left: 5%;
+        }
+    }
+
