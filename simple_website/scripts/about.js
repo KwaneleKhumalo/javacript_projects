@@ -3,11 +3,6 @@ document.querySelector('form').addEventListener('submit', (e)=>{
 })
 
 
-
-
-
-
-
 // Type Effect
 let typed = new Typed('.auto-type', {
     strings: ['Web Design', 'Graphic Design', 'Digital Marketing'],

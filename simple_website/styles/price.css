@@ -20,17 +20,17 @@ body
 .price-model
 {
     width: 35%;
-    height: 40rem;
+    height: 50rem;
     text-align: center;
     display: flex;
     flex-direction: column;
     gap: 20px;
-    padding-bottom: 20px;
 }
 
 .price-model-img
 {
-    height: 50%;
+    width: 100%;
+    min-height: 50%;
 }
 
 .web > .price-model-img
@@ -66,11 +66,28 @@ body
     background-size: cover;
 }
 
+.brand
+{
+    background-color: #17D6FF;
+    color: white;
+}
+
+.brand > .price-model-button > button
+{
+    background-color: #080899d8 !important;
+}
+
 
 .price-model-title > strong
 {
     font-size: 25px;
     border-bottom: 2px solid #17D6FF;
+}
+
+.brand > .price-model-title > strong
+{
+    font-size: 25px;
+    border-bottom: 2px solid #080899d8;
 }
 
 
@@ -92,6 +109,11 @@ li
 li > .material-icons
 {
     color: #17D6FF !important;
+}
+
+.brand > ul > li > .material-icons
+{
+    color: #080899d8 !important;
 }
 
 .price-model-button > button
@@ -138,11 +160,18 @@ li > .material-icons
         flex-direction: column;
         width: 100%;
         padding-left: 5%;
+        justify-content: space-around;
     }
 
     .price-model
     {
         width: 80%;
+    }
+
+    .price-model-img
+    {
+        width: 100%;
+        min-height: 80%;
     }
 }
 
@@ -150,7 +179,32 @@ li > .material-icons
 {
     .price-container
     {
+        flex-direction: column;
         width: 95%;
         padding-left: 2.5rem;
+    }
+
+    .price-model
+    {
+        width: 60%;
+        padding-bottom: 20px;
+        margin-top: 5rem;
+        height: auto;
+    }
+
+    .price-model-img
+    {
+        min-height: 100%!important;
+        padding-bottom: 20rem !important;
+    }
+
+    .price-model-title > strong
+    {
+        font-size: 16px !important;
+    }
+
+    ul
+    {
+        margin-bottom: 3rem;
     }
 }
